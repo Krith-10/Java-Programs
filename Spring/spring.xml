@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        
+        <beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+        	<!-- <bean id="triangle" class="SpringInit.Triangle">
+        	
+        	Only if setter methods are there in the class the property or value could be passed
+        	<property name="type" value="Equilateral"></property>
+        	<property name="radius" value="4"/>
+        	
+        	Only if constructor is mentioned the below would work out
+        	
+        	<constructor-arg type="java.lang.String" value="Equilateral"/>
+        	<constructor-arg type="int" value="5"/>
+        	 
+        	 <property name="coord1" ref="coordA"></property>
+        	 
+        	 <property name="coord2">
+        	 	<bean class="SpringInit.Coordinate">
+        		<property name="x1" value="1"></property>
+        		<property name="x2" value="2"></property>
+        		</bean>	Inner Bean
+        	 </property>
+        	</bean>
+        	
+        	
+        	<bean id="coordA" class="SpringInit.Coordinate">
+        	<property name="x1" value="0"></property>
+        	<property name="x2" value="1"></property>
+        	</bean> -->
+        	
+        	<context:component-scan base-package="SpringInit"></context:component-scan>
+        	
+        	<!-- <bean class="SpringInit.UsingBeanProcessor"></bean> -->
+        	
+        	<!-- <bean class="SpringInit.usingBeanFactory"></bean> -->
+        	
+        	<bean id="car" class="SpringInit.Car">
+        		
+        	</bean>
+        	
+        	<bean id="make" class="SpringInit.Tyre">
+        		<property name="brand" value="Ceat"></property>
+        	</bean>
+        	
+        	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        		<property name="basenames">
+        			<list>
+        				<value>messages</value>
+        			</list>
+        		</property>
+        	</bean>
+       	</beans>
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
+       	
