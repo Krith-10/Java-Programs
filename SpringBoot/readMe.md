@@ -3,4 +3,4 @@
 
 [Courseapi](/SpringBoot/Courseapi) performed without connection with the database.
 
-[CourseTopicApi](/SpringBoot/CorseTopicApi) performs by building entity relationship.
+[CourseTopicApi](/SpringBoot/CourseTopicApi) performs by building entity relationship.
